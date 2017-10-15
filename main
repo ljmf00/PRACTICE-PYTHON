@@ -1,0 +1,20 @@
+"""Create a program that asks the user to enter their name and their age.
+Print out a message addressed to them that tells them the year that they will turn 100 years old."""
+
+
+
+#https://docs.python.org/2/library/datetime.html#datetime.datetime.now
+
+import datetime
+now = datetime.datetime.now()
+get_year = now.year #Current year
+year = int (get_year)
+
+name_input = input ("Please enter your name: ")
+age_input = input ("Please enter your age: ")
+age_int = int (age_input)
+
+year_you_turn_100 = int (year - age_int + 100)
+year_you_turn_100_str = "year_you_turn_100"
+
+print (name_input + ", you will turn 100 years old in" + year_you_turn_100_str)
