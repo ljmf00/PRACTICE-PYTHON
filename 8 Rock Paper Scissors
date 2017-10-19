@@ -29,7 +29,7 @@ def win(winner):
 while i < 1:
   p1 = input("\nPlayer 1,\n\nrock,\npaper\nor\nscissors??\n:")
   p2 = input("\nPlayer 2,\n\nrock,\npaper\nor\nscissors??\n:")
-  if p1 == p2:
+  if (p1 == "rock" and p2 == "rock") or (p1 == "paper" and p2 == "paper") or (p1 == "scissors" and p2 == "scissors"):
     draw()
     question = input("\nDo you want to start a new game? Y/n")
     if question == "n":
