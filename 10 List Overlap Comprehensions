@@ -54,6 +54,13 @@ list_1 = list(set(rnd_list_1))
 list_2 = list(set(rnd_list_2))
 #print(list_1)
 #print(list_2)
+
+if len(list_1) >= len(list_2):
+  longer_list = list_1
+  shorter_list = list_2
+else:
+  longer_list = list_2
+  shorter_list = list_1
   
-#common = [x for x in list_1 for y in list_2 if x == y]
-print([x for x in list_1 for y in list_2 if x == y])
+#common = [x for x in longer_list for y in shorter_list if x == y]
+print([x for x in longer_list for y in shorter_list if x == y])
